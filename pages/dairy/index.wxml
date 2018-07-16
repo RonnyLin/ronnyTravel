@@ -1,0 +1,12 @@
+<view class="wrapper">
+	<view class="flex">
+		<view class="flex-item flex" wx:for="{{pages}}" wx:key="id" wx:for-index="idx" wx:for-item="page">
+			<view></view>
+			<view class="img">
+				<image src="{{page.post.url}}"  data-objectId="{{page.objectId}}" catch:tap='enter_detail'/>
+			</view>
+			<view class="txt">[{{page.author}}]{{page.section}}</view>
+		</view>
+	</view>
+</view>
+

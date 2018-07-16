@@ -1,0 +1,208 @@
+.main .addPhoto image{
+    display:block;
+    width:80rpx;
+    height:80rpx;
+    border-radius:50%;
+    margin:auto;
+    z-index:100;
+    position:absolute;
+    right:80rpx;
+    top:5rpx;
+    box-shadow:0 0 6rpx 6rpx #fff;
+
+}
+
+.main .addPhoto image::after{
+    content: '';
+    background: #000;
+    width: 90rpx;
+    height: 90rpx;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    opacity: .2;
+}
+.changePhoto_txt{
+    color:#fff;
+    position:absolute;
+    right:69rpx;
+    top:90rpx;
+    font-family:'SimHei';
+    font-size:17rpx;
+
+}
+.main{
+    height: 100%;
+    z-index: -2;
+}
+.post{
+
+}
+.post_image{
+    width: 100%;
+}
+.photoView{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    z-index:100;
+    background-color:#f8f8f8;
+}
+.takePhoto{
+    position: relative;
+}
+.photoView .takePhoto image{
+    width:80rpx;
+    height:80rpx;
+}
+.circle1{
+    width:100rpx;
+    height:100rpx;
+    background-color:#fff;
+    position:absolute;
+    top:50rpx;
+    z-index:-1;
+    border-radius:50%;
+    left:-9rpx;
+    box-shadow: 0 0 6rpx 6rpx #efefef;
+}
+.circle2{
+    width:100rpx;
+    height:100rpx;
+    background-color:#fff;
+    position:absolute;
+    top:55rpx;
+    z-index:-1;
+    border-radius:50%;
+    left:-15rpx;
+    box-shadow: 0 0 6rpx 6rpx #efefef;
+
+}
+
+.photoView .albulm{
+    position: relative;
+
+}
+.photoView_txt{
+    font-family:'SimHei';
+    font-size: 26rpx;
+    color: #999;
+    font-weight: 100;
+    text-align: center;
+    height:60rpx;
+}
+.photoView_txt2{
+    height:69rpx;
+}
+.photoView .albulm image{
+    width:68rpx;
+    height:68rpx;
+}
+
+
+
+.content {
+    font-size: 28rpx;
+    padding:0 30rpx;
+    z-index:-1000;
+}
+.content .title,.content .author{
+    padding:20rpx 0rpx;
+    border-bottom: 1rpx dashed #ededed;
+}
+.content .section{
+    padding:20rpx 0rpx;
+    border-bottom: 1rpx dashed #ededed;
+}
+.content .title{
+     color:#333;
+ }
+.content .author{
+    color:#999;
+}
+.content view textarea{
+    width: 100%;
+    height: 150rpx;
+    font-size:36rpx;
+}
+.saveContent{
+    position: fixed;
+    bottom: 200rpx;
+    right:125rpx;
+
+}
+.save{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top:65rpx;
+    left:20rpx;
+
+}
+.save_txt{
+    color:#bfbfbf;
+    font-size:24rpx;
+    position:absolute;
+    top:106rpx;
+    left:16rpx;
+    width: 50rpx;
+}
+.save_btn{
+    width:100rpx;
+    height:100rpx;
+    position:fixed;
+    position: fixed;
+    bottom:50rpx;
+    right:33rpx;
+    z-index:100;
+    opacity:0;
+}
+
+canvas {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background-color:#fff;
+    z-index:100;
+}
+
+.canvas_btn{
+    z-index:101;
+    margin:0 auto;
+    width: 100%;
+    height:70px;
+    border-top:1px solid #000;
+    line-height:70px;
+    padding-top:10px;
+    background-color: #000;
+}
+.canvas_btn button{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:50%;
+    background:#fff;
+    color:#000;
+    font-size:20px;
+    box-shadow:0 0 6rpx 6rpx #eee
+}
+
+.site{
+    position:relative;
+    top:6rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+.site_wrapper{
+    height:32rpx;
+    line-height:32rpx;
+    font-size:24rpx;
+    float:right;
+}

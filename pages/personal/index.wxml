@@ -1,0 +1,59 @@
+<view class="page">
+	<view class="header" >
+		<view class="edit"  catch:tap='editEvent'>
+			<view><image src="../../images/edit_me.png"/></view>
+			<view class="edit_content">创作小记</view>
+		</view>
+		<view class="black headerTitle">
+			<view class="avatar">
+				<button class="btn"   open-type="getUserInfo" bindgetuserinfo="getUserInfo">  </button>
+
+				<image src="{{src}}" />
+			</view>
+			<view class="userName">
+				{{username}}
+			</view>
+
+		</view>
+	</view>
+	<view class="page__bd wrapper">
+
+		<!--<view class="flex">-->
+			<!--<view class="flex-item flex" wx:for="{{pages}}" wx:key="id" wx:for-index="idx" wx:for-item="page">-->
+				<!--<view></view>-->
+				<!--<view class="img">-->
+					<!--<image src="{{page.post.url}}"  data-objectId="{{page.objectId}}" catch:tap='enter_detail'/>-->
+				<!--</view>-->
+				<!--<view class="txt">[{{page.author}}]{{page.section}}</view>-->
+			<!--</view>-->
+		<!--</view>-->
+
+		<view class="weui-panel">
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells weui-cells_in-small-appmsg">
+						<navigator url="../dairy/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../images/diary.png"  /></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">日记</view>
+							</view>
+						</navigator>
+						<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../images/foot.png" /></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">足迹</view>
+							</view>
+						</navigator>
+						<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../images/dream.png"  /></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">心愿</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>

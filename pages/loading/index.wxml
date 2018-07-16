@@ -1,0 +1,18 @@
+<view class="loading">
+  <image src="http://bmob-cdn-20413.b0.upaiyun.com/2018/07/13/cc5c37f2403dfc9d80ac268f48df29e9.png"></image>
+  <image style="height:400rpx;" class="text_img" src="http://bmob-cdn-20413.b0.upaiyun.com/2018/07/14/e6f7388b40ff1a4980a6520de87b06e6.png"/>
+  <!--<view class="share-ex">-->
+    <!--<view>后来，冬日里</view>-->
+    <!--<view>我们坐在太阳底下，</view>-->
+    <!--<view>彼此在椅子睡着了</view>-->
+    <!--<view>不再需要说什么</view>-->
+    <!--<view>就这样幸福的睡着了</view>-->
+    <!--<view>……</view>-->
+  <!--</view>-->
+
+  <button class="in"   open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入{{showTime}} </button>
+
+  <view class="date">{{date}}</view>
+</view>
+
+

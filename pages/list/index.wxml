@@ -1,0 +1,14 @@
+<view class="contain">
+  <!--<view>旅行清单</view>-->
+  <view class="button-sp-area">
+
+  <button class="weui-btn" type="default" plain="true">心愿清单</button>
+  </view>
+  <!--<button class="weui-btn" type="primary" disabled="true" plain="true">按钮</button>-->
+
+    <!--<button class="weui-btn" type="default" disabled="true" plain="true">按钮</button>-->
+
+
+</view>
+
+

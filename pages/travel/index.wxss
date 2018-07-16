@@ -1,0 +1,31 @@
+.testPage {
+ padding-top: 60rpx
+}
+.header {
+  width:270rpx;
+  font-size: 50rpx;
+  margin: 0 auto 60rpx;
+}
+.wrapper {
+  padding: 0 60rpx;
+  color: #3f3f3f;
+}
+.wrapper .title  {
+ height: 150rpx;
+ font-size: 40rpx;
+ margin-bottom: 48rpx;
+}
+.radios .radio {
+  display: block;
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 36rpx;
+}
+.btn-area {
+  width: 160rpx;
+  margin: 60rpx auto 0;
+}
+.btn-area .btn {
+  font-size: 32rpx;
+  padding: 0;
+}

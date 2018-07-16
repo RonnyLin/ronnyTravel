@@ -1,0 +1,32 @@
+.main .avater{
+    display: block;
+    width: 190rpx;
+    height: 190rpx;
+    border-radius: 50%;
+    margin:20rpx auto;
+}
+
+.main .name{
+    color:#ededed;
+    font-size:28rpx;
+    text-align:center;
+    display:block;
+    margin:20rpx auto;
+}
+.main .btn{
+width: 500rpx;
+position: absolute;
+bottom: 200rpx;
+left: 125rpx;
+
+box-shadow: #222 10rpx 10rpx 10rpx
+}
+
+.main{
+    background: url('http://bmob-cdn-19734.b0.upaiyun.com/2018/06/07/dc1797d940ccb8cd80fc54c434c75883.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow:hidden;
+
+}

@@ -1,0 +1,9 @@
+<view class="main">
+  <view class="section">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+sd
+    </picker>
+  </view>
+</view>
+
+

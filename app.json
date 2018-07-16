@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/loading/index",
+    "pages/main/index",
+    "pages/travel/index",
+    "pages/personal/index",
+    "pages/index/index",
+    "pages/edit/index",
+    "pages/canvas/index",
+    "pages/sharePage/index",
+    "pages/map/index",
+    "pages/list/index",
+    "pages/detail/index",
+    "pages/foot/index",
+    "pages/dairy/index"
+  ]
+  ,"window":{
+    "backgroundTextStyle":"white"
+    ,"navigationBarBackgroundColor": "#000000"
+    ,"navigationBarTitleText": "幽灵旅行"
+    ,"navigationBarTextStyle":"white"
+    ,"enablePullDownRefresh": false
+  }
+  ,
+  "tabBar":{
+    "color": "#000",
+    "selectedColor": "#000",
+    "borderStyle":"#000",
+    "backgroundColor":"#FFF",
+    "list": [
+      {
+        "selectedIconPath": "images/ALL2.png",
+        "iconPath": "images/ALL.png",
+        "pagePath": "pages/main/index",
+        "text": "Share"
+      },
+      {
+      "selectedIconPath": "images/map.png",
+      "iconPath": "images/map2.png",
+      "pagePath": "pages/map/index",
+      "text": "Map"
+    },
+    {
+        "selectedIconPath": "images/list2.png",
+        "iconPath": "images/list.png",
+        "pagePath": "pages/list/index",
+        "text": "Route"
+    },
+    {
+      "selectedIconPath": "images/ME2.png",
+      "iconPath": "images/ME.png",
+      "pagePath": "pages/personal/index",
+      "text": "Me"
+    }]
+  }
+
+,"debug": true
+}

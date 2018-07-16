@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.7",
+	"appid": "wxbfc328702b435898",
+	"projectname": "%E6%97%85%E8%A1%8C%E7%BE%8E%E9%A3%9F%E5%9B%BE%E9%89%B4",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "test",
+					"pathName": "pages/map/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "3",
+					"pathName": "pages/edit/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}
