@@ -8,11 +8,10 @@ const
 
 Page({
     data: { // 初始化页面渲染数据
-        pages:[]
+        pages:[],
+        flag: false
     },
     onLoad: function () {
-
-
     },
     onReady:function () {
         //监听页面初次渲染完成
@@ -21,13 +20,18 @@ Page({
         //监听页面显示
         let me = this;
         API.getPesonalPost().then(res =>{
+            
             for (let i = 0;i<res.length;i++){
-                res[i].post = JSON.parse( res[i].post);
+                res[i].post = JSON.parse(res[i].post);
             }
             console.error(res)
             if(res.length>0){
                 me.setData({
-                    pages:res
+                    pages:res  
+                })
+            } else {
+                me.setData({
+                    flag: true 
                 })
             }
         })
