@@ -1,17 +1,16 @@
 const
     Bmob = require('./utils/Bmob-1.6.1.min.js'),
     Storage = require('./utils/storage.js'),
-    wxApi = require('./api/wxApi.js')
+    wxApi = require('./api/wxApi.js'),
+    { appkey, appsecret } = require('./person-config.js')
   ;
-console.log(Bmob);
-Bmob.initialize("1daf21c0def4ac59c9737a4ec004c9ee", "57fc22d76feb8d48d3d5d3c8c2a6b3ff");
+Bmob.initialize("appkey", "appsecret");
 
 //app.js
 App({
   onLaunch: function (data) {
     console.log(data);
-    let me = this;
-
+    let me = this;  
      Bmob.User.auth().then(res => {
           let options = me.globalData.userInfo = {
               openid:res.authData.weapp.openid,
@@ -25,7 +24,9 @@ App({
           if(!userInfo){
               Storage.set(options.openid,options);
           }
-          me.getUserInfoByStorage(options,me);
+          me.getUserInfoByStorage(options,me,function (res) {
+              console.error(res)
+          });
       }).catch(err => {
         console.error('Bmob.user!');
         console.log(err);
@@ -59,7 +60,7 @@ App({
 
 })
 
-function getUserInfoByStorage(option,app) {
+function getUserInfoByStorage(option,app,cal) {
     let wxuser =  Bmob.Query('wxuser');
         let options = option;
 
@@ -70,6 +71,7 @@ function getUserInfoByStorage(option,app) {
               if(res && res.length != 0 && !options.encryptedData){
                   app.globalData.userInfo = res[0];
                   console.error('该用户已经打开过小程序');
+                  app.globalData.firstOpenFlag = false;
                 return;
               }
             if(res && res[0]&&res[0].avatarUrl){
@@ -77,6 +79,8 @@ function getUserInfoByStorage(option,app) {
                 console.error('数据库已经存在此数据，不再插入');
                 return;
             }
+            //首次打开
+            app.globalData.firstOpenFlag = true;
             wxuser.set("openid",options.openid);
             wxuser.set("session_key",options.session_key);
             wxuser.set("sessionToken",options.sessionToken);
@@ -85,24 +89,34 @@ function getUserInfoByStorage(option,app) {
             if(options.encryptedData){
                 wxuser.set('id', res[0].objectId);
                 wxuser.set("encryptedData",options.encryptedData);
-                wxuser.set("errMsg",options.errMsg);
                 wxuser.set("iv",options.iv);
-                wxuser.set("rawData",options.rawData);
                 wxuser.set("signature",options.signature);
                 wxuser.set("avatarUrl",options.avatarUrl);
                 wxuser.set("city",options.city);
                 wxuser.set("country",options.country);
                 wxuser.set("gender",options.gender);
-                wxuser.set("language",options.language);
                 wxuser.set("nickName",options.nickName);
                 wxuser.set("province",options.province);
+                wxuser.set("vip",0);
             }
           wxuser.save().then(res => {
               console.log(res)
-              console.log('插入成功')
-
+              console.log('插入成功');
+              if(!app.globalData.userInfo.objectId){
+                  wxuser.equalTo("openid","==",options.openid);
+                  wxuser.find().then(user =>{
+                      if(user[0]){
+                          Object.assign(app.globalData.userInfo,user[0])
+                          console.error(app.globalData.userInfo);
+                      }
+                      cal(res)
+                  });
+                  return
+              }
+              cal(res)
           }).catch(err => {
               console.log(err)
+              cal(err)
           })
           })
 }

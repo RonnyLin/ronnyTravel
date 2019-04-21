@@ -1,0 +1,58 @@
+<view  class="main {{ImageBytesFlag? 'bg':''}}">
+    <view class="title">
+        {{plan.title}}
+    </view>
+    <view class="author">
+        {{plan.author}}
+    </view>
+    <view class="animation">
+        <image class="left" src="/images/addPlan/sh.png" />
+        <image class="center" src="/images/addPlan/airplane.png" />
+        <image class="right" src="/images/addPlan/xn.png" />
+    </view>
+    <view class="date">
+        出发时间：{{plan.date}}
+    </view>
+    <view class="content">
+        <view class="join_title">计划清单:</view>
+        {{plan.content}}
+    </view>
+    <view class="dest">
+        <view class="join_title">目的地:</view>
+        <block wx:for="{{plan.dest}}" wx:for-index="index"   wx:for-item="dest" wx:key="index">
+            <view class="dest_item" data-site="{{[dest.latitude,dest.longitude]}}" catch:tap="watchMap">
+                <image src="/images/addPlan/fc.png" />
+                <view class="dest_content">{{dest.value}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="dest">
+        <view class="join_title">同行伙伴:</view>
+        <block wx:for="{{plan.join}}" wx:for-index="index"   wx:for-item="person" wx:key="index">
+            <view class="dest_item" data-openid="{{person.openid}}" catch:tap='watchUser'>
+                <image src="{{person.avatarUrl}}" style="border-radius: 50%"/>
+                <view class="dest_content" style="margin-left: 20rpx">{{person.name}}</view>
+                <view wx:if="{{!!person.phone && pemission==1}}"  style="font-size:28rpx;color:#444;display: inline-block;position: absolute;right: 30rpx;overflow: hidden">{{person.phone}}</view>
+            </view>
+        </block>
+    </view>
+    <view style="margin: 60rpx">
+        <button wx:if="{{ pemission==1}}" class="weui-btn"  type="default" plain="true" catch:tap="sendImageBytes">生成邀请二维码</button>
+        <button wx:if="{{ pemission==1}}" class="weui-btn" open-type="share" type="default" plain="true" >邀请伙伴加入旅行</button>
+    </view>
+
+
+    <view class="imageBytes" hidden="{{!ImageBytesFlag}}" catch:tap="sendImageBytes">
+        <view >
+            <image class="post" src="http://bmob-cdn-20816.b0.upaiyun.com/2018/08/01/59427d8d40f299658027134d6df705d1.png" mode="widthFix"/>
+        </view>
+        <view class="author" style="padding: 30rpx">
+            <span style="font-size: 38rpx">{{plan.author}}</span> 邀你加入旅行: <span style="font-size: 38rpx">{{plan.title}}</span>
+        </view>
+        <view style="margin-bottom: 30rpx">
+            <image class="erweima" src="{{imageBytes}}"/>
+        </view>
+    </view>
+</view>
+
+

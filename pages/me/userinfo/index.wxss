@@ -1,0 +1,23 @@
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    font-size:32rpx;
+    color:#555;
+    padding: 0 20rpx;
+}
+.userinfo_item{
+    display: flex;
+    flex-direction: row;
+    height:120rpx;
+    line-height:120rpx;
+}
+.userinfo_item input{
+    height: 120rpx;
+    line-height: 120rpx;
+}
+.userinfo_item .label{
+    width: 130rpx;
+    font-size:28rpx;
+    color:#333;
+
+}

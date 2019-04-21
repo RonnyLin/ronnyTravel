@@ -1,0 +1,38 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">{{fileList.name}}</view>
+            <view class="page_userinfo">
+                <span>
+                    <image style="width:80rpx; height: 80rpx;border-radius: 50%" src="{{fileList.avatarUrl}}" />
+                </span>
+                <span class="page_userinfo_name">
+                    <span style="font-size: 28rpx;color: #a4a4a4">{{fileList.author}}</span>
+                    <span style="font-size: 20rpx;color: #a4a4a4">{{fileList.createdAt}}</span>
+                </span>
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        {{fileList.content}}
+                    </view>
+                    <view class="weui-article__p">
+                        <block  wx:for="{{fileList.post}}" wx:for-index="idx" wx:for-item="poster" wx:key = "idx">
+                            <image class="weui-article__img" src="{{poster}}" mode="widthFix" style="width:100%;" />
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view>
+        <comment-pannel bind:replyComment="onReplyComment" bind:refreshComments = "refreshComments" comments="{{ comments }}" likes="{{ likes }}"> </comment-pannel>
+    </view>
+    <view class="weui-loadmore weui-loadmore_line">
+        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">THE END</view>
+    </view>
+    <view class="{{focus?'bg-black':''}}"></view>
+    <!-- 评论输入框 -->
+    <comment-input id="comment_input" replayComment = "{{replayComment}}" like="{{ like }}" bind:myPublish="onMyPublish" bind:myFocus="onMyFocus" bind:myBlur="onMyBlur" bind:myLike = "onMyLike"  bind:myShare = "onMyShare" bind:myErweima="onMyErweima"> </comment-input>
+</view>

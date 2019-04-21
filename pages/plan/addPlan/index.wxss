@@ -1,0 +1,96 @@
+.main .avater{
+    display: block;
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    margin:20rpx auto;
+}
+
+.main .name{
+    color:#000;
+    font-size:28rpx;
+    text-align:center;
+    display:block;
+    margin:20rpx auto;
+}
+.main .btn1{
+width: 500rpx;
+margin: auto;
+box-shadow: #222 10rpx 10rpx 10rpx;
+    margin-bottom: 30rpx;
+}
+.btn2{
+width: 500rpx;
+margin: auto;
+box-shadow: #222 10rpx 10rpx 10rpx;
+}
+.main{
+    height: 100%;
+}
+
+.section{
+    height:90rpx;
+    line-height: 90rpx;
+    padding:10rpx 30rpx;
+}
+.date_content{
+    display: inline-block;
+    margin-left: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+    top:-25rpx;
+}
+.dest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dest_item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.dest_item_text{
+    font-size:24rpx ;
+}
+
+.heart{
+    padding:10rpx 30rpx;
+}
+
+.heart_content{
+    display: inline-block;
+    margin-left: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+    top:-25rpx;
+}
+
+.heart_textarea{
+    background: #f6f6f6;
+}
+.heart_textarea textarea{
+    width:80%;
+    height:200rpx;
+    margin-left:114rpx;
+    padding-top:40rpx;
+}
+
+.title{
+    padding:10rpx 30rpx;
+
+}
+.title_content{
+    width:80%;
+    margin-left:114rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+
+.friend{
+    text-align:center;
+    color:#999;
+    font-size:28rpx;
+}

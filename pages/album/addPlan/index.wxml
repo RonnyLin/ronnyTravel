@@ -1,0 +1,46 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+        <form bindsubmit="formSubmit">
+
+        <view class="weui-cells__title">唱片名：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="name" placeholder="请输入文本" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">简介：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="content" placeholder="请输入文本" style="height: 5.3em" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">联系方式：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="contact" placeholder="请输入文本" style="height: 5.3em" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">海报：</view>
+        <view class="page__bd page__bd_spacing" style="padding: 0 30rpx">
+            <wux-upload list-type="picture-card" file-list="{{ fileList }}" url="http://"  bind:success="onSuccess"  bind:remove="onRemove"  bind:preview="onPreview">
+                <image src="/images/album/upload.png" width="32" height="32" />
+            </wux-upload>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" formType="submit">发布</button>
+        </view>
+    </form>
+
+
+    </view>
+</view>

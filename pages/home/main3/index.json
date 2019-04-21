@@ -1,0 +1,14 @@
+{
+   "enablePullDownRefresh": false
+  ,"backgroundColor": "#f1f1f1"
+  ,"onReachBottomDistance":50
+  , "usingComponents": {
+      "wux-tabs" : "../../../component/tabs/index",
+      "wux-tab" : "../../../component/tab/index",
+      "wux-popup" : "../../../component/popup/index",
+      "wux-skeleton": "../../../component/skeleton/index",
+      "wux-skeleton-paragraph": "../../../component/skeleton-paragraph/index",
+      "ronny-post-item":"../../../component/poster-item/index",
+      "ronny-list-item":"../../../component/list-item/index"
+  }
+}

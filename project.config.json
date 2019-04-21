@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.7",
-	"appid": "wxbfc328702b435898",
-	"projectname": "%E6%97%85%E8%A1%8C%E7%BE%8E%E9%A3%9F%E5%9B%BE%E9%89%B4",
+	"appid": "wxee00cd4ae7c06de8",
+	"projectname": "%E5%B9%BD%E6%9E%97%E6%97%85%E8%A1%8C",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -33,13 +33,14 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
 					"name": "test",
-					"pathName": "pages/map/index",
-					"query": ""
+					"pathName": "pages/album/pageDetail/index",
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": 1,

@@ -1,0 +1,94 @@
+<view  class="testPage">
+    <view wx:if="{{firstOpenFlag}}" catch:tap="firstOpen" class="shadow">
+        <image src="/images/main/head.png"/>
+        <span>向上滑，切换下一页</span>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}" circular vertical bindchange="change">
+        <block wx:for="{{pages}}"  wx:key="id" wx:for-index="idx" wx:for-item="page">
+            <swiper-item class="item">
+                <!--<image src="{{page.post.url}}" class="slide-image" style="width: 100%"  mode="widthFix"/>-->
+                <!--<view>-->
+                    <!--<view class="user_header">-->
+                        <!--<view class="avatar"><image src="{{page.avatarUrl}}" class="user_avatar"/></view>-->
+                        <!--<view class="user_nickName">{{page.nickName}}</view>-->
+                    <!--</view>-->
+                    <!--<view class="user_position">-->
+                        <!--<view class="location">-->
+                            <!--<image src="../../images/main/site.png" />-->
+                            <!--<span>{{page.city}}</span>-->
+                        <!--</view>-->
+                        <!--<view>{{page.createdAt}}</view>-->
+                    <!--</view>-->
+                <!--</view>-->
+                <view style="height: 40rpx"></view>
+                <view class="share-img">
+                    <image src="{{page.post.url}}" data-url="{{page.post.url}}" catch:tap = "preview"/>
+                </view>
+                <view class="share-m">
+                    <view data-openId="{{page.openid}}" catch:tap="watchUser">
+                        <view class="title">{{page.title}}</view>
+                        <view class="name" >{{page.author}}</view>
+                    </view>
+                    <view class="location" data-site="{{[page.latitude,page.longitude]}}" catch:tap="watchMap">
+                        <view>
+                            <image src="../../../images/main/site.png" />
+                        </view>
+                        <view class="site" title="{{page.site}}" >{{page.site}}</view>
+                    </view>
+                </view>
+                <scroll-view scroll-y style="height: 140rpx;">
+
+                    <view class="share-ex" style="height: 0rpx;">{{page.section}}</view>
+
+                </scroll-view>
+
+                <!--<view class="flex share-msg">-->
+                    <!--<view class="flex msg-l">-->
+                        <!--<image src="{{page.avatarUrl}}" class="icon"/>-->
+                        <!--@<view class="nick">{{page.nickName}}</view>-->
+                    <!--</view>-->
+                    <!--<view class="share-er">-->
+                        <!--<image src="{{page.imageBytes}}" />-->
+                        <!--<view class="txt">-扫码进入-</view>-->
+                    <!--</view>-->
+                <!--</view>-->
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!--<view>-->
+        <!--<view class="share-img">-->
+            <!--<image src="{{page.post.url}}"  mode="widthFix"/>-->
+        <!--</view>-->
+        <!--<view class="user_header">-->
+            <!--<view class="avatar"><image src="{{page.avatarUrl}}" class="user_avatar"/></view>-->
+            <!--<view class="user_nickName">{{page.nickName}}</view>-->
+        <!--</view>-->
+        <!--<view class="user_position">-->
+            <!--<view class="location"><image src="{{page.avatarUrl}}" class="user_avatar"/></view>-->
+            <!--<view class="user_nickName">{{page.nickName}}</view>-->
+        <!--</view>-->
+        <!--<view class="user_content">-->
+            <!--<view class="avatar"><image src="{{page.avatarUrl}}" class="user_avatar"/></view>-->
+            <!--<view class="user_nickName">{{page.nickName}}</view>-->
+        <!--</view>-->
+    <!--</view>-->
+
+    <!--<view class="share-m">-->
+      <!--<view class="title">{{page.title}}</view>-->
+      <!--<view class="name">{{page.author}}</view>-->
+    <!--</view>-->
+    <!--<view class="share-ex">{{page.section}}</view>-->
+    <!--<view class="flex share-msg">-->
+      <!--<view class="flex msg-l">-->
+        <!--<image src="{{page.avatarUrl}}" class="icon"/>-->
+        <!--@<view class="nick">{{page.nickName}}</view>-->
+      <!--</view>-->
+      <!--<view class="share-er">-->
+        <!--<image src="{{page.imageBytes}}" />-->
+        <!--<view class="txt">-扫码进入-</view>-->
+      <!--</view>-->
+    <!--</view>-->
+  </view>
+
+

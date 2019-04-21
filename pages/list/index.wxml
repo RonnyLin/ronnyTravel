@@ -1,14 +1,92 @@
 <view class="contain">
-  <!--<view>旅行清单</view>-->
-  <view class="button-sp-area">
 
-  <button class="weui-btn" type="default" plain="true">心愿清单</button>
+  <view wx:if="true">
+    <swiper autoplay="true" interval="3000" duration="500" style="height:210px;">
+      <block wx:for="{{imgUrls}}" wx:key="id" wx:for-index="idx" wx:for-item="image">
+        <swiper-item>
+          <image src="{{image.url}}"  class="slide-image" style="width: 100%"  mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view style="background:#fff;color: #000;font-size: 24rpx;padding: 40rpx;">
+      <view >不要问为什么出发</view>
+      <view >你想追逐的风景，在你内心</view>
+    </view>
+    <view class="tab">
+      <view data-num="1" class="{{_num==1?'cur':''}}" catch:tap="menuClick"> 我发起</view>
+      <view data-num="2" class="{{_num==2?'cur':''}}" catch:tap="menuClick"> 我参与 </view>
+    </view>
+
+    <block wx:if="{{_num==1}}">
+      <block wx:if="{{planList.length>0}}" wx:for="{{planList}}" wx:key="id" wx:for-index="idx" wx:for-item="plan">
+        <button type="default" style="padding: 0" data-objectId="{{plan.objectId}}" data-pemission="1" catch:tap="seePlan">
+          <view class="planList mt-13" >
+            <view class="header">
+              {{plan.title}}
+            </view>
+            <view class="author">
+              {{plan.author}}
+            </view>
+            <view class="join">
+              <view class="patner">同行伙伴</view>
+              <block wx:for="{{plan.join}}"  wx:key="openid" wx:for-index="id" wx:for-item="person">
+                <!--<view class="toast"></view>-->
+                <view>
+                  <image src="{{person.avatarUrl}}"></image>
+                </view>
+                <!--<view>{{person.name}}</view>-->
+              </block>
+            </view>
+            <view class="content">
+              {{plan.content}}
+            </view>
+        </view>
+        </button>
+      </block>
+      <view class="noplan" wx:if="{{initPage && planList.length==0}}">
+        你还没有旅行计划！
+      </view>
+      <!--<view>旅行清单</view>-->
+      <view class="button-sp-area">
+        <button class="weui-btn" type="default" plain="true" catch:tap="addPlan">新建旅行</button>
+      </view>
+    </block>
+
+
+    <block wx:if="{{_num==2}}">
+      <block wx:if="{{joinplan.length>0}}" wx:for="{{joinplan}}" wx:key="id" wx:for-index="idx" wx:for-item="plan">
+        <button type="default" style="padding: 0" data-pemission="0" data-objectId="{{plan.objectId}}" catch:tap="seePlan">
+          <view class="planList mt-13" >
+            <view class="header">
+              {{plan.title}}
+            </view>
+            <view class="author">
+              {{plan.author}}
+            </view>
+            <view class="join">
+              <view class="patner">同行伙伴</view>
+              <block wx:for="{{plan.join}}"  wx:key="openid" wx:for-index="id" wx:for-item="person">
+                <!--<view class="toast"></view>-->
+                <view>
+                  <image src="{{person.avatarUrl}}"></image>
+                </view>
+                <!--<view>{{person.name}}</view>-->
+              </block>
+            </view>
+            <view class="content">
+              {{plan.content}}
+            </view>
+          </view>
+        </button>
+      </block>
+      <view class="noplan" wx:if="{{initPage && joinplan.length==0}}">
+        你还没有加入旅行计划！
+      </view>
+    </block>
   </view>
-  <!--<button class="weui-btn" type="primary" disabled="true" plain="true">按钮</button>-->
-
-    <!--<button class="weui-btn" type="default" disabled="true" plain="true">按钮</button>-->
 
 
+  <view style="height: 30rpx"></view>
 </view>
 
 

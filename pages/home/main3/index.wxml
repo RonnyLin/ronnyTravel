@@ -1,0 +1,87 @@
+<import src="/template/circle_button/circle_button.wxml" />
+
+<wux-popup  position="bottom" class-names="slideInUp" visible="{{ visible }}" bind:close="onClose">
+    <view class="bottom">
+        <block wx:for="{{images_temple}}" wx:for-index="idx" wx:for-item="images_temple_item" wx:key = "{{images_temple_item.page}}">
+            <view  class="all" data-pageUrl="{{images_temple_item.page}}"  catch:tap='enter_page'>
+                <template is="circle_button" data ="{{...images_temple_item}}" />
+            </view>
+        </block>
+    </view>
+    <view catch:tap="onClose">
+        <image style="width: 50rpx;height: 50rpx" src="/images/alert/exit.png" ></image>
+    </view>
+</wux-popup>
+
+<view  class="page">
+
+    <wux-tabs default-current="tab1" theme="stable"  bindchange="onChange" class="fixed-top">
+        <wux-tab key="tab1" title="旅行帖">
+
+        </wux-tab>
+        <!--<wux-tab key="tab2" title="城市空间">-->
+
+        <!--</wux-tab>-->
+        <!--<wux-tab key="tab2" title="同城活动">-->
+
+        <!--</wux-tab>-->
+
+        <wux-tab key="tab2" title="共享图书">
+
+        </wux-tab>
+    </wux-tabs>
+
+
+    <view  class="album">
+
+        <!--<scroll-view-->
+                <!--scroll-y-->
+                <!--style="height:{{ scrollHeight }}"-->
+                <!--bindscrolltoupper="upper1"-->
+                <!--bindscrolltolower="lower1"-->
+                <!--bindscroll="scroll1"-->
+        <!--&gt;-->
+            <block wx:if="{{current == 'tab1' }}">
+                <block  wx:for="{{lists}}" wx:for-index="idx" wx:for-item="list" wx:key = "idx">
+                    <ronny-list-item list="{{list}}"></ronny-list-item>
+                </block>
+
+                <view style="margin: 20px auto"  class="weui-loadmore" wx:if="{{planStatus.isLoad}}">
+                    <view class="weui-loading"></view>
+                    <!--<view class="weui-loadmore__tips">正在加载</view>-->
+                </view>
+
+                <view class="weui-loadmore weui-loadmore_line" wx:if="{{planStatus.isEnd}}">
+                    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">THE END</view>
+                </view>
+                <!--空白占位置用-->
+                <view style="height: 60px" wx:if="{{!planStatus.isLoad && !planStatus.isEnd}}">
+                </view>
+            </block>
+
+            <block wx:if="{{current == 'tab2' }}">
+                <block  wx:for="{{posters}}" wx:for-index="idx" wx:for-item="poster" wx:key = "idx">
+                    <ronny-post-item poster="{{poster}}"></ronny-post-item>
+                </block>
+
+                <view style="margin: 20px auto" class="weui-loadmore" wx:if="{{albumStatus.isLoad}}">
+                    <view class="weui-loading"></view>
+                    <!--<view class="weui-loadmore__tips">正在加载</view>-->
+                </view>
+
+                <view class="weui-loadmore weui-loadmore_line" wx:if="{{albumStatus.isEnd}}">
+                    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">THE END</view>
+                </view>
+
+                <view style="height: 60px" wx:if="{{!albumStatus.isLoad && !albumStatus.isEnd}}">
+                </view>
+
+            </block>
+
+
+        <!--</scroll-view>-->
+    </view>
+
+    <view class="botton_edit"  catch:tap="open"><image style="width:40rpx;height:40rpx;"  src="/images/alert/pan.png" /></view>
+
+</view>

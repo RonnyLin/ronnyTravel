@@ -28,12 +28,12 @@
 
 }
 .in{
-  width:125rpx;
+  width:130rpx;
   font-size:26rpx;
   color:#FFF;
   background:rgba(0,0,0,.2);
-  height:50rpx;
-  line-height:46rpx;
+  height:56rpx;
+  line-height:52rpx;
   border-radius:25rpx;
   font-weight:100;
   position: absolute;

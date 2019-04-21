@@ -1,0 +1,22 @@
+<view  class="main">
+<view class='avater' >
+  <open-data  type="userAvatarUrl"></open-data>
+</view>
+  <open-data class='name' type="userNickName"></open-data>
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="area">
+      <view class="area_item"  wx:for="{{myData}}" wx:key="id" wx:for-index="idx" wx:for-item="city">
+        {{city.name}}
+      </view>
+    </view>
+  </scroll-view>
+
+  <picker class="weui-btn btn"  mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+    添加足迹
+  </picker>
+
+
+<button  class="save" type="default"     bindtap="saveMap"> 保存 </button>
+</view>
+
+

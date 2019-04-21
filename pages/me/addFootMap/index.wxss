@@ -1,0 +1,59 @@
+.main .avater{
+    display: block;
+    width: 190rpx;
+    height: 190rpx;
+    border-radius: 50%;
+    margin:20rpx auto;
+}
+
+.main .name{
+    color:#ededed;
+    font-size:28rpx;
+    text-align:center;
+    display:block;
+    margin:20rpx auto;
+}
+.main .btn{
+    width:500rpx;
+    position:absolute;
+    top:780rpx;
+    left:125rpx;
+    box-shadow:#222 10rpx 10rpx 10rpx;
+    text-align:center;
+    height:100rpx;
+    line-height:100rpx;
+
+}
+
+.main{
+    background: url('http://bmob-cdn-19734.b0.upaiyun.com/2018/06/07/dc1797d940ccb8cd80fc54c434c75883.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow:hidden;
+
+}
+
+.area{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    flex-wrap:wrap;
+}
+
+.save{
+    width:500rpx;
+    position:absolute;
+    top:940rpx;
+    left:125rpx;
+    box-shadow:#222 10rpx 10rpx 10rpx;
+    text-align:center;
+    height:100rpx;
+    line-height:100rpx;
+}
+.area_item{
+    background: url("http://bmob-cdn-20413.b0.upaiyun.com/2018/07/23/6d1a7ca940ab65098073da7a9fcabbf4.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin:0rpx 10rpx;
+}

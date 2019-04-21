@@ -1,0 +1,82 @@
+<wux-dialog id="wux-dialog" />
+<wux-dialog id="wux-dialog--alert" />
+
+
+<view  class="main">
+<!--<view class='avater' >-->
+  <!--<open-data  type="userAvatarUrl"></open-data>-->
+<!--</view>-->
+  <!--<open-data class='name' type="userNickName"></open-data>-->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view style="height: 40rpx"></view>
+  <view class="title">
+    <image src="/images/addPlan/title.png" style="width: 80rpx;height: 80rpx"/>
+    <view class="date_content">
+      主题：
+    </view>
+    <view style="background: #f6f6f6">
+      <input class="title_content" name="title" placeholder="起个名字，让大家更了解吧"/>
+    </view>
+  </view>
+
+  <view class="section">
+    <image src="/images/addPlan/dest.png" style="width: 80rpx;height: 80rpx"/>
+    <view class="date_content">
+      地点：
+      <image src="/images/addPlan/add.png" catch:tap="add" style="width: 60rpx;height: 60rpx;position: relative;top: 20rpx;margin-right: 30rpx"/>
+      <image src="/images/addPlan/reduce.png"  catch:tap="reduce" style="width: 60rpx;height: 60rpx;position:relative;top: 20rpx;"/>
+    </view>
+  </view>
+
+  <view class="dest" style="margin-bottom:50px;margin:30rpx;background: #f6f6f6;min-height: 200rpx">
+    <block wx:for="{{dest}}" wx:for-index="index"   wx:for-item="item" wx:key="index">
+      <view class="dest_item" data-site="{{[item.latitude,item.longitude]}}"  catch:tap = 'watchMap'>
+        <span>
+          <image src="/images/addPlan/bani.png" style="width: 80rpx;height: 80rpx;position:relative;top: 20rpx;" />
+        </span>
+        <span class="dest_item_text">{{item.value}}</span>
+      </view>
+    </block>
+  </view>
+
+
+  <view class="section section_gap">
+    <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
+      <image src="/images/addPlan/time.png" style="width: 78rpx;height: 78rpx"/>
+      <view class="date_content">
+       出发时间： {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="heart">
+    <image src="/images/addPlan/heart.png" style="width: 80rpx;height: 80rpx"/>
+    <view class="heart_content">
+      备注：
+    </view>
+    <view class="heart_textarea" hidden="{{open}}">
+      <textarea  name="content" show-confirm-bar="true" adjust-position placeholder="备注" />
+    </view>
+  </view>
+
+
+
+
+  <!--<view class="btn-area">-->
+    <!--<button formType="submit">Submit</button>-->
+    <!--<button formType="reset">Reset</button>-->
+  <!--</view>-->
+  <view class="friend">创建旅行计划，邀请好友加入</view>
+  <button class="btn1" formType="submit"  catch:tap='save' > 保存 </button>
+  <!--<button class="btn2"  catch:tap='invite'> 邀请好友 </button>-->
+  <view style="height: 40rpx"></view>
+
+</form>
+
+
+
+  <!--<button class="btn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="primary"> 重新规划你的人生 </button> -->
+</view>
+
+

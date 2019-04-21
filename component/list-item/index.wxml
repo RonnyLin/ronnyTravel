@@ -1,0 +1,29 @@
+<view class="list_item" data-page="{{list.page}}" catch:tap='enter_page'>
+
+    <view class="list_item_left">
+        <view class="comment">
+            <span><image src="/images/component/comment.png"/></span>
+            <span style="font-size: 28rpx;color: #d4d4d4">{{list.comment.length}}</span>
+        </view>
+    </view>
+
+
+    <view class="list_item_center">
+        <view class="list_item_center_content {{list.has_image? 'has_image' : '' }}" >
+            <span class="list_item_center_content_title">{{list.title}}</span>
+            <span class="list_item_center_content_user">
+                <span>
+                    <image src="{{list.avatar}}" />
+                </span>
+                <span style="color: #a1a1a1;font-size: 24rpx">{{list.userName}}</span>
+                <span> {{list.updateTime}} </span>
+            </span>
+        </view>
+    </view>
+
+    <view class="list_item_right" wx:if="{{list.has_image}}">
+        <image mode="scaleToFill"   src="{{list.imageUrl}}" />
+    </view>
+
+</view>
+

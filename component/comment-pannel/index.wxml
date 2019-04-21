@@ -1,0 +1,40 @@
+<import src="./comment_list.wxml" />
+<import src="./like_list.wxml" />
+
+<view class="comment_pannel">
+    <wux-tabs default-current="tab1" theme="stable"  bindchange="onChange">
+        <wux-tab key="tab1" title="">
+            <span>回复<i style="font-size: 20rpx;position:relative;top:-5px;">{{comments.length || 0}}</i></span>
+        </wux-tab>
+        <wux-tab key="tab2" title="">
+            <span>赞<i style="font-size: 20rpx;position:relative;top:-5px;">{{likes.length || 0}}</i></span>
+        </wux-tab>
+    </wux-tabs>
+
+        <view wx:if="{{current == 'tab1' }}" class="comment_area">
+
+            <span wx:if="{{!!comments.length}}" class="replay_title" >全部回复：</span>
+
+            <block  wx:if="{{!!comments.length}}" wx:for="{{ comments }}" wx:for-index="idx" wx:for-item="comment" wx:key = "idx">
+                <view catch:tap="reply" data-comment="{{ comment }}">
+                    <template is="comment_list" data ="{{...comment}}"  />
+                </view>
+            </block>
+
+            <view wx:if="{{!comments.length}}" class="blank">
+                暂无回复~
+            </view>
+
+        </view>
+
+        <view wx:if="{{current == 'tab2' }}" class="comment_area">
+            <block  wx:if="{{!!likes.length}}" wx:for="{{ likes }}" wx:for-index="idx" wx:for-item="like" wx:key = "idx">
+                <view catch:tap="" data-comment="{{}}">
+                    <template is="like_list" data ="{{...like}}"  />
+                </view>
+            </block>
+            <view wx:if="{{!likes.length}}" class="blank">
+                暂无点赞~
+            </view>
+        </view>
+</view>

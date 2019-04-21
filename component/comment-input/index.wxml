@@ -1,0 +1,31 @@
+<view class="pannal">
+    <view class="replay_comment" wx:if="{{focus && !!replayComment.content}}">
+        <view class="avatar">
+            <image src="{{replayComment.avatarUrl}}"></image>
+        </view>
+        <view>
+            {{replayComment.userName}}:   {{replayComment.content}}
+        </view>
+    </view>
+    <view class="comment_input">
+        <view  class = "{{focus?'focus':'input'}}">
+            <input value="{{value}}" bindinput="bindKeyInput" adjust-position="false" focus="{{focus}}" placeholder="写回复…" confirm-type="done" bindfocus="bindfocus" bindblur="bindblur"/>
+        </view>
+        <view  wx:if = '{{ focus }}' class="publish" bindtap='publish'>
+            发布
+        </view>
+        <view wx:if = '{{ !focus }}' class="comment_operator">
+            <view >
+                <image wx:if='{{!like}}' catch:tap="like" src="/images/comment/unlike.png"></image>
+                <image wx:if='{{!!like}}' src="/images/comment/like.png"></image>
+            </view>
+            <button catch:tap="share" open-type="share" type="default" plain="true" style="border:none;">
+                <image src="/images/comment/share.png" style="position:relative;top:-10rpx;"></image>
+            </button>
+            <view catch:tap="erweima"  >
+                <image src="/images/comment/erweima.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+

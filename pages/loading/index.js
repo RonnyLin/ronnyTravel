@@ -8,13 +8,32 @@ const
 
 let date = utils.Getdate(new Date());
 let timeout;
-
+let me;
 Page({
     data: {
         date:date,
-        showTime:''
+        showTime:'',
+        shareFlag:false,
+        shareId:''
     },
-    onLoad: function () {
+    onLoad: function (options) {
+        me = this;
+        console.error(options);
+        if(options.shareflag=='1' && options.objectId){
+            me.data.shareFlag = true;
+            me.data.shareId = options.objectId;
+        }
+        // if(options.openid){
+        //     me.data.options = options;
+        //     return;
+        // }
+
+    },
+    onReady:function () {
+        //监听页面初次渲染完成
+
+    },
+    onShow:function () {
         let me = this;
         setTimeout(()=>{
             //监听页面显示
@@ -25,26 +44,30 @@ Page({
                         showTime: totalTime
                     },function () {
                         totalTime--;
+                        if(totalTime==0){
+                            clearInterval(interval);
+                            me.setData({
+                                showTime:''
+                            })
+                        }
                     })
                 },1000);
-                if(totalTime==1){
-                    window.clearInterval(interval);
+
+                if(me.data.shareFlag){
+                    timeout = setTimeout(function () {
+                        wx.navigateTo({
+                            url: `/pages/plan/joinPlan/index?shareId=${me.data.shareId}`
+                        })
+                    },3000)
+                }else{
+                    timeout = setTimeout(function () {
+                        wx.switchTab({
+                            url: '/pages/list/index'
+                        })
+                    },3000)
                 }
-                timeout = setTimeout(function () {
-                    wx.switchTab({
-                        url: '../main/index'
-                    })
-                },3000)
             }
-        },2000)
-
-    },
-    onReady:function () {
-        //监听页面初次渲染完成
-
-    },
-    onShow:function () {
-
+        },1000)
     },
     onHide:function () {
         //监听页面隐藏
@@ -82,12 +105,40 @@ Page({
             };
             Object.assign(app.globalData.userInfo,options);
             Storage.set(app.globalData.userInfo.openid,app.globalData.userInfo);
-            app.getUserInfoByStorage(app.globalData.userInfo,app);
+            app.getUserInfoByStorage(app.globalData.userInfo,app,function (data) {
+                if(app.globalData.userInfo.openid){
+                    clearTimeout(timeout);
+                    if(me.data.shareFlag){
+                        wx.navigateTo({
+                            url: `/pages/plan/joinPlan/index?shareId=${me.data.shareId}`
+                        })
+                        return;
+                    }
+                    wx.switchTab({
+                        url: '../list/index'
+                    })
+                }else {
+                    wx.showToast({
+                        title: '身份认证失败',
+                        icon: 'none',
+                        duration: 3000
+                    })
+                }
+            });
+
+        }else{
+            clearTimeout(timeout);
+            if(me.data.shareFlag){
+                wx.navigateTo({
+                    url: `/pages/plan/joinPlan/index?shareId=${me.data.shareId}`
+                })
+                return;
+            }
+            wx.switchTab({
+                url: '../list/index'
+            })
         }
-        clearTimeout(timeout);
-        wx.switchTab({
-            url: '../main/index'
-        })
+
     },
     enter:function () {
 

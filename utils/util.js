@@ -15,7 +15,7 @@ function Getdate(date) {
     var month = date.getMonth() + 1
     var day = date.getDate()
 
-    return [year, month, day].map(formatNumber).join('.')
+    return [year, month, day].map(formatNumber).join('-')
 }
 
 

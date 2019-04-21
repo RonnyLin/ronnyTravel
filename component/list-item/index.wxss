@@ -1,0 +1,91 @@
+.list_item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-top:20rpx;
+  width: 100%;
+  padding:40rpx 0 20rpx;
+  background:#fff;
+  border-bottom:1rpx solid #e4e4e4;
+}
+
+.list_item:active {
+  background: #f4f4f4;
+}
+.list_item:visited{
+  background: #fff;
+
+}
+.list_item_left{
+  max-width: 100rpx;
+  min-width:100rpx;
+  position:absolute;
+  left:0;
+
+}
+.list_item_left .comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-top: -10rpx;
+}
+.list_item_left .comment image{
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.list_item_center{
+  display: flex;
+  flex-direction: row;
+  padding: 0 10rpx;
+  margin-top: -8rpx;
+  margin-left: 100rpx;
+  position: relative;
+}
+.list_item_center_content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.list_item_center_content_title {
+  font-size: 28rpx;
+}
+.list_item_center_content_user{
+  display: flex;
+  justify-content: flex-start;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.list_item_center_content_user span:last-child{
+  font-size: 24rpx;
+  color: #e5e5e5;
+  position: relative;
+  left: 20rpx;
+}
+.list_item_center_content_user image{
+  position: relative;
+  top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 8rpx;
+  margin-right: 10rpx;
+}
+.has_image{
+  width: 460rpx;
+}
+
+.list_item_right{
+  width: 150rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.list_item_right image{
+  display: inherit;
+  border-radius: 12rpx;
+  width: 150rpx;
+  height: 100rpx;
+}

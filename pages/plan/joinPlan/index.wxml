@@ -1,0 +1,49 @@
+<wux-dialog id="wux-dialog" />
+<wux-dialog id="wux-dialog--alert" />
+
+<view  class="main">
+    <view class="title">
+        {{plan.title}}
+    </view>
+    <view class="author">
+        {{plan.author}}
+    </view>
+    <view class="animation">
+        <image class="left" src="/images/addPlan/sh.png" />
+        <image class="center" src="/images/addPlan/airplane.png" />
+        <image class="right" src="/images/addPlan/xn.png" />
+    </view>
+    <view class="date">
+        出发时间：{{plan.date}}
+    </view>
+    <view class="content">
+    <view class="join_title">计划清单</view>
+        {{plan.content}}
+    </view>
+    <view class="dest">
+        <view class="join_title">目的地</view>
+        <block wx:for="{{plan.dest}}" wx:for-index="index"   wx:for-item="dest" wx:key="index">
+            <view class="dest_item" data-site="{{[dest.latitude,dest.longitude]}}" catch:tap="watchMap">
+                <image src="/images/addPlan/fc.png" />
+                <view class="dest_content">{{dest.value}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="dest">
+        <view class="join_title">同行伙伴</view>
+        <block wx:for="{{plan.join}}" wx:for-index="index"   wx:for-item="person" wx:key="index">
+            <view class="dest_item" data-openid="{{person.openid}}" catch:tap='watchUser'>
+                <image src="{{person.avatarUrl}}" style="border-radius: 50%"/>
+                <view class="dest_content" style="margin-left: 20rpx">{{person.name}}</view>
+                <!--<view wx:if="{{!!person.phone}}" style="font-size:24rpx;color:#444;">联系方式:{{person.phone}}</view>-->
+            </view>
+        </block>
+    </view>
+    <view style="margin: 60rpx">
+        <button class="weui-btn" catch:tap="join" type="default" plain="true" >加入</button>
+        <button class="weui-btn" catch:tap="returnMainPage"  type="default" plain="true">首页</button>
+
+    </view>
+</view>
+
+

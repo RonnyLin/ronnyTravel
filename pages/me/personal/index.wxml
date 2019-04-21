@@ -1,0 +1,113 @@
+<view class="page">
+	<view class="header" >
+		<view class="edit"  catch:tap='editEvent'>
+			<view><image src="../../../images/edit_me.png"/></view>
+			<!--<view class="edit_content">创作小记</view>-->
+		</view>
+		<view class="black headerTitle">
+			<view class="avatar">
+				<button class="btn"   open-type="getUserInfo" bindgetuserinfo="getUserInfo">  </button>
+
+				<image src="{{src}}" />
+			</view>
+			<view class="userName">
+				{{username}}
+			</view>
+
+		</view>
+	</view>
+	<view class="edit_pannal">
+		<view class="pannal_header weui_content">
+			新增旅行
+		</view>
+		<view class="pannal_content">
+			<view class="pannal_content_item" catch:tap='editDiaryEvent'>
+				<span class="pannal_content_item_image">
+					<image src="../../../images/personal/dairy_edit.png" />
+				</span>
+				<span class="pannal_content_item_content">
+					日记
+				</span>
+			</view>
+			<view class="pannal_content_item" catch:tap='editMapEvent'>
+				<span class="pannal_content_item_image">
+					<image src="../../../images/personal/foot_edit.png" />
+				</span>
+				<span class="pannal_content_item_content">
+					足迹
+				</span>
+			</view>
+			<view class="pannal_content_item">
+				<span class="pannal_content_item_image" catch:tap='addPlan'>
+					<image src="../../../images/personal/plan_edit.png" />
+				</span>
+				<span class="pannal_content_item_content" >
+					旅行计划
+				</span>
+			</view>
+		</view>
+	</view>
+	<view class="page__bd wrapper">
+
+		<view class="weui-panel">
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells weui-cells_in-small-appmsg">
+						<navigator url="../../me/dairy/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../../images/personal/dairy.png"  /></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">旅行日记</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="weui-panel">
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells weui-cells_in-small-appmsg">
+						<navigator url="../../me/map/index?openid={{openid}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../../images/personal/foot.png"/></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">旅行足迹</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!--<view class="weui-panel">-->
+			<!--<view class="weui-panel__bd">-->
+				<!--<view class="weui-media-box weui-media-box_small-appmsg">-->
+					<!--<view class="weui-cells weui-cells_in-small-appmsg">-->
+						<!--<navigator url="../../me/dairy/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">-->
+							<!--<view class="weui-cell__hd"><image src="../../../images/personal/setting.png"  /></view>-->
+							<!--<view class="weui-cell__bd weui-cell_primary">-->
+								<!--<view class="weui_content">设置</view>-->
+							<!--</view>-->
+						<!--</navigator>-->
+					<!--</view>-->
+				<!--</view>-->
+			<!--</view>-->
+		<!--</view>-->
+
+		<view class="weui-panel">
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells weui-cells_in-small-appmsg">
+						<navigator url="../../me/help/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+							<view class="weui-cell__hd"><image src="../../../images/personal/help.png"  /></view>
+							<view class="weui-cell__bd weui-cell_primary">
+								<view class="weui_content">反馈</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>

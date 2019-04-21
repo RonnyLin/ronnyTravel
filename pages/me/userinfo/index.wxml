@@ -1,0 +1,47 @@
+<view  class="main">
+  <view>
+    <form bindsubmit="formSubmit"  class="userinfo" >
+      <view class="userinfo_item">
+        <view class="label">昵称：</view>
+        <view>
+          <input  value="{{userInfo.nickName}}" disabled/>
+        </view>
+      </view>
+      <view class="userinfo_item">
+        <view class="label">性别：</view>
+        <view>
+          <input  value="{{userInfo.gender==0?'未知':(userInfo.gender==1?'男':'女')}}" disabled/>
+        </view>
+      </view>
+      <view class="userinfo_item">
+        <view class="label">生日：</view>
+        <picker name="birth"  mode="date" value="{{birth||'1900-09-01'}}" start="1900-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view style="margin-left:-10px;">
+                {{userInfo.birth || '1900-09-01'}}
+          </view>
+        </picker>
+      </view>
+      <view class="userinfo_item">
+        <view class="label">微信：</view>
+        <view>
+          <input value="{{userInfo.wechat}}" name="wechat" placeholder="微信号" />
+        </view>
+      </view>
+      <view class="userinfo_item">
+        <view class="label">手机：</view>
+        <view>
+          <input value="{{userInfo.phone}}" name="phone" placeholder="手机号" />
+        </view>
+      </view>
+      <view class="userinfo_item">
+        <view  class="label">签名：</view>
+        <view style="width: 95%">
+          <input style="width: 95%" value="{{userInfo.sign}}"  name="sign" placeholder="高尚是高尚者的墓志铭，卑鄙是卑鄙者的通行证" />
+        </view>
+      </view>
+      <button formType="submit" style="margin-top:50rpx;">保存</button>
+    </form>
+  </view>
+</view>
+
+

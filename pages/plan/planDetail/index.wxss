@@ -1,0 +1,98 @@
+.main{
+  padding:30rpx;
+}
+
+.title{
+  font-size:48rpx;
+  font-weight:800;
+}
+.author{
+  padding:50rpx 0;
+  font-size:28rpx;
+  color:#444;
+
+}
+.date{
+  font-size:28rpx;
+  text-align:center;
+  padding:30rpx;
+  color:#333;
+}
+.dest_item{
+  height: 96rpx;
+  line-height: 96rpx;
+  padding:10rpx 0;
+
+
+}
+.dest image{
+  width:76rpx;
+  height:76rpx;
+}
+.dest_content{
+  width: 80%;
+  font-size: 32rpx;
+  overflow:scroll;
+  white-space:nowrap;
+  display: inline-block;
+}
+.join_title{
+  font-size:28rpx;
+  text-align:left;
+  padding:30rpx 0;
+  color:#333;
+  border-bottom:1rpx dashed #999;
+
+
+}
+
+.animation image{
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.animation .left{
+  float: left;
+}
+.animation .center{
+  width: 64rpx;
+  height: 64rpx;
+  position:relative;
+  animation:myfirst 10s infinite;
+}
+@keyframes myfirst
+{
+  0%   { left:0px; top:0px;}
+  25%  { left:200rpx; top:0px;}
+  50%  { left:375rpx;transform: rotateY(180deg); top:0px;}
+  75%  {left:200rpx; top:0px;}
+  100% { left:0px; top:0px;}
+}
+.animation .right{
+  float: right;
+}
+.imageBytes{
+  margin:0;
+  padding:0;
+  position:fixed;
+  top:30rpx;
+  width:90%;
+  left:0;
+  background:#fff;
+  height:88%;
+  left:5%;
+
+}
+.imageBytes .post{
+  width: 100%;
+}
+.erweima{
+  height:255rpx;
+  width:255rpx;
+  margin: auto;
+  display:block;
+}
+
+.bg{
+  background: rgba(0,0,0,.6);
+}

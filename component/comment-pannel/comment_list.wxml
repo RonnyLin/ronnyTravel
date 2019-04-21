@@ -1,0 +1,22 @@
+<template name="comment_list">
+<view class="comment_list" >
+    <view class="avatar">
+        <image src="{{ avatarUrl }}"/>
+    </view>
+    <view class="comment">
+        <view class="comment_name">
+            <span style="font-size:32rpx;font-weight: 600;">{{ userName }} <i style="width:20rpx"></i><i>昨天 21:58</i></span>
+        </view>
+        <view class="comment_ancestor" wx:if="{{!!reply.userName}}">
+            <i style="font-size:24rpx;color: #000;font-weight: 600">{{reply.userName}}</i><i style="font-size:24rpx;width:20rpx"></i>
+            {{reply.content}}
+        </view>
+        <view class="comment_content">{{ content }} </view>
+        <view class="comment_like">
+            <image src="/images/comment/unlike2.png" catch:tap="like" data-objectId="{{ objectId }}" wx:if="{{ !unliked }}"></image>
+            <image src="/images/comment/like.png" wx:if="{{ unliked }}"></image>
+            <i>{{ like }}</i>
+        </view>
+    </view>
+</view>
+</template>

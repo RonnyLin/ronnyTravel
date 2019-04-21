@@ -1,0 +1,27 @@
+.circle{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.circle image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.circle_wrapper{
+  margin: auto;
+  width:120rpx;
+  font-size:24rpx;
+  height:160rpx;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.circle_text{
+  margin-top:12rpx;
+  font-size: 20rpx;
+}

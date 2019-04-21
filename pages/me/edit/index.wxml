@@ -1,0 +1,61 @@
+<view  class="main">
+    <image hidden="{{openFlag}}"  catch:tap='changePhoto' mode="widthFix"  class="post_image" src="{{post}}"></image>
+        <view class="addPhoto">
+          <image catch:tap='changePhoto' src="../../../images/albulm.png"></image>
+        </view>
+    <view class="changePhoto_txt">点击更改封面</view>
+
+    <view class="content" hidden="{{openCanvas || openFlag}}">
+          <form catch:submit="formSubmit" >
+              <view class="site_wrapper" catch:tap='chooseSite'>
+                  <image class="site" src="../../../images/site.png"></image>
+                  <!--<input value="{{site}}" style="position:relative;top:-6rpx;display: inline-block"/>-->
+                  {{site}}
+              </view>
+              <view class="title"><input name="title" placeholder="标题" maxlength="30"/></view>
+              <view class="author"><input value="{{author}}" name="author" placeholder="作者" maxlength="15"/></view>
+
+              <view class="section">
+                  <textarea name="section" show-confirm-bar="true" adjust-position placeholder="这一刻，你想写下" />
+              </view>
+
+              <!--<button formType="submit" catch:tap="save" class="weui-btn" type="default" plain="true">保存</button>-->
+
+              <button formType="submit"  class="weui-btn" type="default" plain="true">保存</button>
+
+              <!--<button formType="submit" catch:tap="save" class="save_btn" >-->
+              <!--</button>-->
+              <!--<view class="saveContent">-->
+                  <!--<image class="save" src="../../images/save.png"></image>-->
+                  <!--<view class="save_txt">保存</view>-->
+                  <!--<view class="circle1"></view>-->
+              <!--</view>-->
+          </form>
+    </view>
+
+
+  <view class="photoView"  wx:if="{{openFlag}}" catch:tap='changePhoto2' >
+      <view catch:tap="takePhoto" class="takePhoto">
+        <view class="photoView_txt">拍照</view>
+        <image src="../../../images/takePhoto.png"></image>
+        <view class="circle1"></view>
+      </view>
+    <view catch:tap="takeAlbulm" class="albulm">
+      <view class="photoView_txt photoView_txt2">相册</view>
+      <image src="../../../images/addPhoto.png"></image>
+      <view class="circle2"></view>
+    </view>
+  </view>
+
+<!--<view class='avater' >-->
+  <!--<open-data  type="userAvatarUrl"></open-data>-->
+<!--</view>-->
+<!--<open-data class='name' type="userNickName">-->
+  <!--<open-data class='name' type="userNickName"></open-data>-->
+<!--</open-data>-->
+<!--<button class="btn"  catch:tap='pageToTest' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 高考时光机 </button>-->
+<!--<button class="btn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 重新规划你的人生 </button> -->
+</view>
+
+

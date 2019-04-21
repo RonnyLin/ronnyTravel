@@ -1,0 +1,10 @@
+<template name="circle_button">
+    <view class="circle_wrapper">
+        <view class="circle">
+            <image src="{{src}}" />
+        </view>
+        <view class="circle_text"> {{text}} </view>
+    </view>
+</template>
+
+

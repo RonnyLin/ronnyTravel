@@ -1,5 +1,12 @@
+page{
+  background: #fafafa;
+}
 .contain{
   height: 100%;
+  padding-bottom: 30rpx;
+}
+.mt-13{
+  margin-top: 13px;
 }
 .weui-btn{
   width: 100%;
@@ -9,9 +16,89 @@
   margin:auto;
   padding-top:15px;
   width:60%;
-  height:100%;
   display:flex;
   flex-direction:column;
   align-content:center;
   justify-content: center;
+}
+.noplan{
+  text-align:center;
+  width:60%;
+  margin:auto;
+  color:#999;
+padding-top: 30rpx;
+}
+
+.planList{
+  display:flex;
+  flex-direction: column;
+  padding: 30rpx 30rpx;
+  background: #fff;
+}
+.planList .author{
+  color:#999;
+  font-size:32rpx;
+}
+.planList .content{
+  color:#999;
+  font-size:32rpx;
+  overflow:hidden;
+  width:100%;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+}
+.join{
+  position: relative;
+  height: 280rpx;
+  background-image: url("http://bmob-cdn-20413.b0.upaiyun.com/2018/07/28/5ac56d43400a53ed80d9f5c8fb381396.png");
+  background-size: 120rpx 120rpx;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  line-height:280rpx;
+  display:flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.toast {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+.join image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.patner{
+  position:absolute;
+  top:10rpx;
+  height:40rpx;
+  line-height:40rpx;
+  width:100%;
+  text-align:center;
+  font-size:28rpx;
+}
+
+.tab{
+  display: flex;
+  height: 60rpx;
+  padding: 30rpx;
+  background: #fff;
+  margin-top: 13px;
+  justify-content: space-around;
+}
+.tab view{
+  flex:1;
+  text-align: center;
+  color: #999;
+}
+.tab .cur{
+  color: #000;
+}
+.tab view:first-child{
+  border-right: 1rpx solid #999;
 }

@@ -1,0 +1,8 @@
+{
+  "disableScroll":false
+  ,"backgroundColor": "#f1f1f1"
+  ,"usingComponents": {
+      "comment-pannel": "../../../component/comment-pannel/index",
+      "comment-input":"../../../component/comment-input/index"
+  }
+}

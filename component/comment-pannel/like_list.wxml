@@ -1,0 +1,13 @@
+<template name="like_list">
+    <view class="like_list" >
+        <view>
+            <image src="https://wx.qlogo.cn/mmopen/vi_32/lnfzMT7DeZBiaRzzpSYSohHhYzF9icKQYz2GZaEBqnWMWEhmj3KODAC6ibhRQmdadjCRFWVh11y8QjdRPEDUZvBLQ/132"></image>
+        </view>
+        <view>
+            幽林
+        </view>
+        <view>
+            昨天
+        </view>
+    </view>
+</template>

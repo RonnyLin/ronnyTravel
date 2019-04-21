@@ -1,0 +1,21 @@
+<view class="article" data-page="{{poster.page}}" catch:tap='enter_page'>
+    <view class="title">{{poster.title}}</view>
+    <view class="author">{{poster.author}}</view>
+    <view class="post" wx:if="{{poster.has_image}}">
+        <image mode="scaleToFill"   src="{{poster.imgUrl}}"/>
+    </view>
+    <view class="content">
+        {{poster.content}}
+    </view>
+    <view class="bottom">
+        <view>{{poster.time}}</view>
+        <view class="bottom_select">
+            <view>
+                <image   src="/images/album/read.png"/>
+            </view>
+            <view>
+                {{poster.read|| 0}}
+            </view>
+        </view>
+    </view>
+</view>

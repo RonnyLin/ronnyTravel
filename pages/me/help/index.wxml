@@ -1,0 +1,24 @@
+<view  class="main">
+  <view class="page__hd">
+    <view class="page__title" style="padding: 30rpx">帮助与反馈</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__p">
+          幽林旅行客服
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+             微信： ronnyTime
+          </view>
+          <view class="weui-article__p">
+            商务合作： 18667186647
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+

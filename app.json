@@ -1,23 +1,31 @@
 {
   "pages":[
     "pages/loading/index",
-    "pages/main/index",
-    "pages/travel/index",
-    "pages/personal/index",
-    "pages/index/index",
-    "pages/edit/index",
-    "pages/canvas/index",
-    "pages/sharePage/index",
-    "pages/map/index",
+    "pages/home/main/index",
+    "pages/home/main2/index",
+    "pages/home/main3/index",
+    "pages/home/user/index",
+    "pages/home/map_detail/index",
     "pages/list/index",
-    "pages/detail/index",
-    "pages/foot/index",
-    "pages/dairy/index"
+    "pages/plan/addPlan/index",
+    "pages/plan/planDetail/index",
+    "pages/plan/joinPlan/index",
+    "pages/album/addPlan/index",
+    "pages/album/pageDetail/index",
+    "pages/me/personal/index",
+    "pages/me/edit/index",
+    "pages/me/map/index",
+    "pages/me/detail/index",
+    "pages/me/foot/index",
+    "pages/me/dairy/index",
+    "pages/me/addFootMap/index",
+    "pages/me/help/index",
+    "pages/me/userinfo/index"
   ]
   ,"window":{
-    "backgroundTextStyle":"white"
+    "backgroundTextStyle":"light"
     ,"navigationBarBackgroundColor": "#000000"
-    ,"navigationBarTitleText": "幽灵旅行"
+    ,"navigationBarTitleText": "幽林旅行"
     ,"navigationBarTextStyle":"white"
     ,"enablePullDownRefresh": false
   }
@@ -25,34 +33,29 @@
   "tabBar":{
     "color": "#000",
     "selectedColor": "#000",
-    "borderStyle":"#000",
+    "borderStyle":"black",
     "backgroundColor":"#FFF",
+    "position":"bottom",
     "list": [
       {
         "selectedIconPath": "images/ALL2.png",
         "iconPath": "images/ALL.png",
-        "pagePath": "pages/main/index",
-        "text": "Share"
+        "pagePath": "pages/home/main3/index",
+        "text": "首页"
       },
       {
-      "selectedIconPath": "images/map.png",
-      "iconPath": "images/map2.png",
-      "pagePath": "pages/map/index",
-      "text": "Map"
-    },
-    {
         "selectedIconPath": "images/list2.png",
         "iconPath": "images/list.png",
         "pagePath": "pages/list/index",
-        "text": "Route"
-    },
-    {
-      "selectedIconPath": "images/ME2.png",
-      "iconPath": "images/ME.png",
-      "pagePath": "pages/personal/index",
-      "text": "Me"
-    }]
+        "text": "个人参与"
+      },
+      {
+        "selectedIconPath": "images/ME2.png",
+        "iconPath": "images/ME.png",
+        "pagePath": "pages/me/personal/index",
+        "text": "我的"
+      }
+    ]
   }
-
 ,"debug": true
 }
