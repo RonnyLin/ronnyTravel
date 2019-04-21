@@ -2,221 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70754c3-6cb1-4d03-890d-e7b6f0c423c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/airplane.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/bani.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/dest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/fc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/person.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/reduce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/sh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/time.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/title.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/xn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addPlan/人.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/album/like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/album/read.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/album/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/album.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/city.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/pan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/alert/travel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/comment/erweima.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/comment/like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/comment/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/comment/unlike.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/comment/unlike2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/component/comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/main/head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/main/site.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/personal/foot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/template/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/animation-group/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/animation-group/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/animation-group/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/animation-group/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/backdrop/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/backdrop/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/backdrop/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/backdrop/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-input/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-input/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-input/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-input/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/comment_list.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/comment-pannel/like_list.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/dialog/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/dialog/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/dialog/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/dialog/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/arrayTreeFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/baseBehavior.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/baseComponent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/checkIPhoneX.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/classNames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/color.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/colors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/computedBehavior.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/debounce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/funcBehavior.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/gestures.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/isEmpty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/mergeOptionsToData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/relationsBehavior.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/safeSetDataBehavior.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/shallowEqual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/helpers/styleToCssString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/list-item/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/list-item/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/list-item/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/list-item/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/popup/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/popup/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/popup/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/popup/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/poster-item/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/poster-item/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/poster-item/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/poster-item/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton-paragraph/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton-paragraph/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton-paragraph/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton-paragraph/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/skeleton/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/fn.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/button.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/common.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/hairline.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/setArrow.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/setBorder.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/setOnepx.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/text.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/mixin/transition.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/reset.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/variable/color.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/variable/global.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/base/variable/util.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/styles/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tab/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tab/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tab/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tab/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tabs/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tabs/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tabs/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/tabs/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/upload/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/upload/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/upload/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/component/upload/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/addPlan/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/addPlan/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/addPlan/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/addPlan/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/pageDetail/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/pageDetail/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/pageDetail/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/album/pageDetail/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/addFootMap/china2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/addFootMap/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/addFootMap/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/addFootMap/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/addFootMap/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/help/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/help/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/help/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/me/help/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/addPlan/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/addPlan/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/addPlan/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/addPlan/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/joinPlan/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/joinPlan/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/joinPlan/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/planDetail/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/planDetail/index.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/planDetail/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/plan/planDetail/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/circle_button/circle_button.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/circle_button/circle_button.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/moment.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/personal/dairy_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/personal/plan_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/dairy/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/dairy/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/dairy/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/dairy/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/detail/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/detail/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/detail/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/detail/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/edit/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/edit/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/edit/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/edit/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/foot/china.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/foot/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/foot/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/foot/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/foot/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main2/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/main2/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/china.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/china2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/map/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/personal/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/personal/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/personal/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/personal/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/sharePage/index.wxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/edit_me.png" afterPath="$PROJECT_DIR$/images/edit_me.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/personal/foot_edit.png" afterPath="$PROJECT_DIR$/images/personal/foot_edit.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/API.js" afterPath="$PROJECT_DIR$/api/API.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ec-canvas/ec-canvas.js" afterPath="$PROJECT_DIR$/ec-canvas/ec-canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ec-canvas/echarts.js" afterPath="$PROJECT_DIR$/ec-canvas/echarts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/index.js" afterPath="$PROJECT_DIR$/pages/list/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/index.wxml" afterPath="$PROJECT_DIR$/pages/list/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/list/index.wxss" afterPath="$PROJECT_DIR$/pages/list/index.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loading/index.js" afterPath="$PROJECT_DIR$/pages/loading/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loading/index.wxml" afterPath="$PROJECT_DIR$/pages/loading/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loading/index.wxss" afterPath="$PROJECT_DIR$/pages/loading/index.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/util.js" afterPath="$PROJECT_DIR$/utils/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weui.wxss" afterPath="$PROJECT_DIR$/weui.wxss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/index/index.js" afterPath="$PROJECT_DIR$/pages/home/map_detail/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/index/index.json" afterPath="$PROJECT_DIR$/pages/home/map_detail/index.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/index/index.wxml" afterPath="$PROJECT_DIR$/pages/home/map_detail/index.wxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/index/index.wxss" afterPath="$PROJECT_DIR$/pages/home/map_detail/index.wxss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/sharePage/index.js" afterPath="$PROJECT_DIR$/pages/plan/joinPlan/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/sharePage/index.json" afterPath="$PROJECT_DIR$/pages/home/main3/index.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/travel/index.js" afterPath="$PROJECT_DIR$/pages/home/main3/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/travel/index.wxml" afterPath="$PROJECT_DIR$/pages/home/main3/index.wxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/travel/index.wxss" afterPath="$PROJECT_DIR$/pages/home/main3/index.wxss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -266,8 +53,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -460,7 +247,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -682,15 +469,15 @@
       <workItem from="1554859479499" duration="5575000" />
       <workItem from="1555553420520" duration="819000" />
       <workItem from="1555644107798" duration="1325000" />
-      <workItem from="1555841787421" duration="311000" />
+      <workItem from="1555841787421" duration="984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="813195000" />
+    <option name="totallyTimeSpent" value="813868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24207188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1083,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>
